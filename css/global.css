@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&family=Akaya+Telivigala&family=Cookie&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Advent Pro", sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* Utility Classes */
+.container {
+  max-width: 95%;
+  margin: auto;
+  padding: 0.5rem;
+}
+.current {
+  border-bottom: 3px solid #e79b25;
+  color: #e79b25 !important;
+}
+
+.hamburger {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  display: none;
+}
+.btn {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: rem;
+}
+.section-bottom {
+  height: 5px;
+  display: block;
+  width: 5%;
+  margin: auto;
+  background: #e79b25;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.5rem;
+}
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.sub-para {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+/* font-family: 'Advent Pro', sans-serif;
+font-family: 'Akaya Telivigala', cursive;
+font-family: 'Cookie', cursive; */
+
+/* 
+#E79B25
+
+#D0F5FF
+
+#56A1D4
+
+#006E9D
+*/
