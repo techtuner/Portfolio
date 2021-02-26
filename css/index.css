@@ -236,10 +236,12 @@ header {
   width: 120px;
   height: 120px;
   line-height: 90px;
+  transform: scale(1.2);
 }
 
 .home-c .process-icon:hover .process-step {
   background: #333333;
+  transform: rotate(-360deg);
 }
 .process .process-item h4 {
   margin-top: 2rem;

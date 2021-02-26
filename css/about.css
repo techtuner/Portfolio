@@ -1,0 +1,153 @@
+header {
+  height: 10vh;
+  background: url("../images/showcase.jpg") no-repeat 80% 20%;
+}
+.navbar {
+  min-height: 10vh;
+}
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+#logo h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-family: "Cookie", cursive;
+  transition: all 1s ease;
+}
+#logo h1:hover {
+  color: #e79b25;
+  letter-spacing: 5px;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  padding: 0.5rem 1.5rem;
+}
+.menu-item a {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  transition: all 0.5s ease;
+}
+.menu-item a:hover {
+  color: #e79b25;
+}
+.about-a {
+  text-align: center;
+  min-height: auto;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.about-a .lead {
+  margin-bottom: 2rem;
+}
+.about-a .a-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-a .a-content .left-content img {
+  width: 250px;
+
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+}
+.about-a .a-content .left-content img:hover {
+  box-shadow: 5px 5px 20px rgba(231, 155, 37, 0.5);
+}
+.about-a .a-content .right-content {
+  margin-left: 2rem;
+  background: #f4f4f4;
+  border-left: 2px solid #e79b25;
+}
+.about-a .a-content .right-content h2 {
+  margin: 2rem auto 0.5rem auto;
+}
+
+.about-a .a-content .right-content p {
+  font-size: 1.25rem;
+  width: 95%;
+  margin: auto;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.about-b {
+  text-align: center;
+  min-height: auto;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  background: #303030;
+  color: #fff;
+}
+.progress-content {
+  margin-bottom: 2rem;
+}
+.progress-content .progress-item {
+  margin-bottom: 0.5rem;
+}
+.progress-content .progress-item h4 {
+  display: block;
+  text-transform: uppercase;
+  text-align: start;
+}
+.progress-content .progress-item .progress {
+  width: 100%;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+.progress-content .progress-item .progress div {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background: #e79b25;
+  font-weight: 700;
+}
+.about-c {
+  text-align: center;
+  min-height: auto;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.testimonial-container {
+  width: 70%;
+  margin: auto;
+}
+.testimonial-container .testimonial-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.testimonial-container .testimonial-item:hover {
+  background: #333;
+  color: #fff;
+}
+.testimonial-container .testimonial-item:hover img:first-child {
+  border: 2px solid #fff;
+  padding: 0;
+  margin-left: 1rem;
+  width: 100px;
+}
+.testimonial-container .testimonial-item img {
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 1rem 1.5rem;
+}
+.testimonial-container .testimonial-item p {
+  width: 70%;
+  margin: auto;
+}
