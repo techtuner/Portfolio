@@ -73,6 +73,35 @@ ul {
   font-size: 1.25rem;
   line-height: 1.5;
 }
+.fa,
+.fas,
+.fab {
+  display: inline-block;
+}
+footer {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content i {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
+.footer-content i:hover {
+  background: #e79b25;
+}
+/* .my-2 {
+  margin: 2rem 0;
+} */
 /* font-family: 'Advent Pro', sans-serif;
 font-family: 'Akaya Telivigala', cursive;
 font-family: 'Cookie', cursive; */
