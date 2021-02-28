@@ -2,6 +2,7 @@ header {
   height: 10vh;
   background: url("../images/showcase.jpg") no-repeat 80% 20%;
 }
+
 .navbar {
   min-height: 10vh;
 }
@@ -29,7 +30,7 @@ header {
   padding: 0.5rem 1.5rem;
 }
 .menu-item a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #fff;
   font-weight: 500;
   padding-bottom: 0.5rem;
@@ -53,8 +54,7 @@ header {
   align-items: center;
 }
 .about-a .a-content .left-content img {
-  width: 350px;
-
+  width: 250px;
   border-radius: 50%;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   transition: all 1s ease;
@@ -63,18 +63,18 @@ header {
   box-shadow: 5px 5px 20px rgba(231, 155, 37, 0.5);
 }
 .about-a .a-content .right-content {
-  margin-left: 2rem;
+  margin-left: 6rem;
   padding: 2rem;
   background: #f4f4f4;
   border-left: 2px solid #e79b25;
 }
 .about-a .a-content .right-content h2 {
   margin: 2rem auto 0.5rem auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .about-a .a-content .right-content p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   width: 70%;
   margin: auto;
   line-height: 1.5;

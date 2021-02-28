@@ -104,6 +104,9 @@ textarea {
   height: 100%;
   margin-top: 0.5rem;
 }
+.text-fields::focus {
+  border: 2px solid #e79b25;
+}
 input::placeholder {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
