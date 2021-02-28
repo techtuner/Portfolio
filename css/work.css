@@ -64,6 +64,39 @@ body {
   padding: 4rem 0.5rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+.btn-insta {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  color: #fff !important;
+  font-size: 1.25rem;
+  font-weight: 500;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 10s ease;
+}
+.btn-insta:hover {
+  background: linear-gradient(
+    45deg,
+    #bc1888 0%,
+    #cc2366 25%,
+    #dc2743 50%,
+    #e6683c 75%,
+    #f09433 100%
+  );
+}
+.cat {
+  height: 455px;
+}
+.coke {
+  color: red !important;
+}
 .card img {
   width: 450px;
   margin-bottom: 0.5rem;
@@ -89,13 +122,23 @@ body {
   font-size: 1.25rem;
   font-weight: 500;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.card .btn-website:hover {
+  background: #ecc65b;
+  color: #333;
+}
+.card .btn-source:hover {
+  background: #bc9aff;
+  color: #333;
 }
 .card .btn-source {
-  background: #333;
+  background: #6f42c1;
   padding: 1rem 2rem;
   margin-top: 1rem;
   color: #fff;
   font-size: 1.25rem;
   font-weight: 500;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
 }

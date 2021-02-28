@@ -53,7 +53,7 @@ header {
   align-items: center;
 }
 .about-a .a-content .left-content img {
-  width: 250px;
+  width: 350px;
 
   border-radius: 50%;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -64,16 +64,18 @@ header {
 }
 .about-a .a-content .right-content {
   margin-left: 2rem;
+  padding: 2rem;
   background: #f4f4f4;
   border-left: 2px solid #e79b25;
 }
 .about-a .a-content .right-content h2 {
   margin: 2rem auto 0.5rem auto;
+  font-size: 2rem;
 }
 
 .about-a .a-content .right-content p {
-  font-size: 1.25rem;
-  width: 95%;
+  font-size: 1.5rem;
+  width: 70%;
   margin: auto;
   line-height: 1.5;
   margin-bottom: 1.5rem;
@@ -120,7 +122,7 @@ header {
 }
 .testimonial-container {
   width: 70%;
-  margin: auto;
+  margin: 1.25rem auto;
 }
 .testimonial-container .testimonial-item {
   display: flex;
@@ -138,7 +140,7 @@ header {
 .testimonial-container .testimonial-item:hover img:first-child {
   border: 2px solid #fff;
   padding: 0;
-  margin-left: 1rem;
+  margin: 1rem;
   width: 100px;
 }
 .testimonial-container .testimonial-item img {

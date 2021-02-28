@@ -29,7 +29,7 @@ header {
   padding: 0.5rem 1.5rem;
 }
 .menu-item a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #fff;
   font-weight: 500;
   padding-bottom: 0.5rem;
@@ -46,7 +46,7 @@ header {
   text-align: center;
 }
 .home-content h1 {
-  font-size: 4rem;
+  font-size: 2.75rem;
   color: #fff;
   font-weight: 700;
 }
