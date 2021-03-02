@@ -180,12 +180,14 @@ header {
   }
   .testimonial-container .testimonial-item {
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .testimonial-container .testimonial-item p {
-    width: 90%;
+    width: 80%;
     shape-outside: circle();
     font-size: 1rem;
-    margin-bottom: 1.25rem;
+    text-align: center;
+    margin: 1.25rem auto;
   }
 }
 
