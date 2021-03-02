@@ -1,44 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@400;700;900&display=swap");
 header {
-  height: 10vh;
+  min-height: 10vh;
   background: url("../images/showcase.jpg") no-repeat 80% 20%;
 }
 
-.navbar {
-  min-height: 10vh;
-}
-.navbar-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-}
-#logo h1 {
-  font-size: 4rem;
-  color: #fff;
-  font-family: "Cookie", cursive;
-  transition: all 1s ease;
-}
-#logo h1:hover {
-  color: #e79b25;
-  letter-spacing: 5px;
-}
-.menu-list {
-  display: flex;
-  align-items: center;
-}
-.menu-item {
-  padding: 0.5rem 1.5rem;
-}
-.menu-item a {
-  font-size: 1.25rem;
-  color: #fff;
-  font-weight: 500;
-  padding-bottom: 0.5rem;
-  transition: all 0.5s ease;
-}
-.menu-item a:hover {
-  color: #e79b25;
-}
 .about-a {
   text-align: center;
   min-height: auto;
@@ -152,4 +117,78 @@ header {
 .testimonial-container .testimonial-item p {
   width: 70%;
   margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
+    text-align: center;
+  }
+  .nav-links li {
+    opacity: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+    width: 80%;
+    padding-bottom: 5rem;
+    margin: 2rem auto;
+  }
+  .nav-links li a {
+    font-size: 1.5rem;
+  }
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: block;
+    z-index: 15;
+  }
+  .about-a .a-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-a .a-content .left-content img {
+    width: 250px;
+    border-radius: 0;
+    height: auto;
+  }
+  .about-a .a-content .right-content {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+  }
+  .about-a .a-content .right-content p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    width: 90%;
+  }
+  .testimonial-container {
+    width: 90%;
+    margin: 1.25rem auto;
+  }
+  .testimonial-container .testimonial-item {
+    flex-wrap: wrap;
+  }
+  .testimonial-container .testimonial-item p {
+    width: 90%;
+    shape-outside: circle();
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
 }

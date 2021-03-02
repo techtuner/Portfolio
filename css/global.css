@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@400;700;900&family=Oswald:wght@700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@400;700;900&display=swap");
 html {
   font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,7 +21,8 @@ a {
 ul {
   list-style: none;
 }
-/* Utility Classes */
+/* Utility Class */
+
 .container {
   max-width: 95%;
   margin: auto;
@@ -30,26 +30,10 @@ ul {
   overflow: hidden;
 }
 .current {
-  border-bottom: 3px solid #e79b25;
+  border-bottom: 2px solid #e79b25;
   color: #e79b25 !important;
 }
 
-.hamburger {
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 1.25rem;
-  color: #fff;
-  display: none;
-}
-.btn {
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 500;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-}
 .heading {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -59,7 +43,7 @@ ul {
 .section-bottom {
   height: 5px;
   display: block;
-  width: 5%;
+  width: 10%;
   margin: auto;
   background: #e79b25;
   border-radius: 10px;
@@ -76,11 +60,52 @@ ul {
   font-size: 1.05rem;
   line-height: 1.5;
 }
-.fa,
-.fas,
-.fab {
-  display: inline-block;
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  font-family: "Lato", sans-serif;
 }
+#logo {
+  font-size: 3.5rem;
+  color: #fff;
+  font-family: "Cookie", cursive;
+  font-weight: 700;
+  transition: all 1s ease;
+  margin-top: 2rem;
+}
+#logo:hover {
+  color: #e79b25;
+  letter-spacing: 5px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
+}
+.nav-links li {
+  padding: 0.5rem 1.5rem;
+}
+.nav-links a {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  transition: all 0.5s ease;
+}
+.nav-links a:hover {
+  color: #e79b25;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #fff;
+}
+/* Footer Styling */
 footer {
   background: #333;
   color: #fff;
@@ -102,19 +127,17 @@ footer {
 .footer-content i:hover {
   background: #e79b25;
 }
-/* .my-2 {
-  margin: 2rem 0;
-} */
-/* font-family: 'Advent Pro', sans-serif;
-font-family: 'Akaya Telivigala', cursive;
-font-family: 'Cookie', cursive; */
 
-/* 
-#E79B25
-
-#D0F5FF
-
-#56A1D4
-
-#006E9D
-*/
+@media screen and (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content i {
+    margin-top: 1.5rem;
+  }
+  #logo h1 {
+    font-size: 3rem;
+  }
+}

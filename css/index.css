@@ -1,43 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@400;700;900&display=swap");
+
+/* font-family: 'Cookie', cursive;
+font-family: 'Lato', sans-serif; */
 header {
   background: url("../images/showcase.jpg") no-repeat center center/cover;
-  height: 100vh;
+  min-height: 100vh;
 }
-.navbar {
-  min-height: 10vh;
-}
-.navbar-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-}
-#logo h1 {
-  font-size: 4rem;
-  color: #fff;
-  font-family: "Cookie", cursive;
-  transition: all 1s ease;
-}
-#logo h1:hover {
-  color: #e79b25;
-  letter-spacing: 5px;
-}
-.menu-list {
-  display: flex;
-  align-items: center;
-}
-.menu-item {
-  padding: 0.5rem 1.5rem;
-}
-.menu-item a {
-  font-size: 1.25rem;
-  color: #fff;
-  font-weight: 500;
-  padding-bottom: 0.5rem;
-  transition: all 0.5s ease;
-}
-.menu-item a:hover {
-  color: #e79b25;
-}
+
 .home-content {
   position: absolute;
   top: 50%;
@@ -46,48 +15,29 @@ header {
   text-align: center;
 }
 .home-content h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   color: #fff;
   font-weight: 700;
 }
 .home-content p {
   margin-bottom: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #fff;
   letter-spacing: 1.25;
 }
 .home-content .btn {
   background: #e79b25;
   transition: all 0.5s ease;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 0.8rem;
+  color: #fff;
 }
 
 .home-content .btn:hover {
-  opacity: 0.8;
+  background: #eed1a6;
+  color: #333;
 }
-
-/* .socials-home {
-  position: absolute;
-  bottom: 2.5rem;
-  right: 4rem;
-}
-.socials-home i {
-  margin: auto 2.5rem;
-  padding: 1.5rem;
-  border-radius: 50%;
-  color: #d0f5ff;
-  border: 2px solid #d0f5ff;
-  overflow: hidden;
-  text-align: center;
-  font-size: 1.5rem;
-  transition: all 1s ease;
-}
-.socials-home i:hover {
-  background: #e79b25;
-  transform: scale(1.05);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  font-size: 2rem;
-  object-fit: cover;
-} */
 .home-a {
   text-align: center;
   min-height: auto;
@@ -166,13 +116,7 @@ header {
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
-/* .process {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 2.5rem;
-  grid-gap: 1.5rem;
-  text-align: center;
-} */
+
 .process {
   display: flex;
   justify-content: space-evenly;
@@ -207,7 +151,7 @@ header {
   align-items: center;
   border-radius: 50%;
   background: #333333;
-  color: #000;
+  color: #fff;
   padding: 2rem;
   width: 120px;
   height: 120px;
@@ -246,4 +190,92 @@ header {
 .process .process-item h4 {
   margin-top: 2rem;
   font-weight: 700;
+}
+/* Media Query */
+@media screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
+    text-align: center;
+  }
+  .nav-links li {
+    opacity: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+    width: 80%;
+    padding-bottom: 5rem;
+    margin: 2rem auto;
+  }
+  .nav-links li a {
+    font-size: 1.5rem;
+  }
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: block;
+    z-index: 15;
+  }
+  .home-skill-container {
+    grid-template-columns: 1fr;
+  }
+  .home-skill-container .home-skill-item {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .home-skill-container .home-skill-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+  }
+  .b-content {
+    grid-template-columns: 1fr;
+  }
+  .b-content .b-item {
+    border-right: none;
+    border-bottom: 2px solid #e79b25;
+
+    padding-bottom: 2rem;
+  }
+  .b-content .b-item:nth-child(2),
+  .b-content .b-item:nth-child(3) {
+    margin-top: 1.5rem;
+  }
+  .process {
+    flex-direction: column;
+  }
+  .process-item {
+    margin-bottom: 1.5rem;
+  }
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+  .home-content p {
+    font-size: 1.25rem;
+  }
+  .home-content .btn {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+  header {
+    background: url("../images/showcase.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
 }
