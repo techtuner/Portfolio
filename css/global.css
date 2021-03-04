@@ -4,6 +4,26 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e79b25;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eed1a6;
+}
+
 *,
 *::after,
 *::before {
