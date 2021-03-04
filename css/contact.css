@@ -1,1 +1,181 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@400;700;900&display=swap");
+header {
+  min-height: 10vh;
+  background: url("../images/showcase.jpg") no-repeat 80% 20%;
+}
+.contact-a {
+  text-align: center;
+  min-height: auto;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+form {
+  display: block;
+  margin-top: 1.5rem;
+  line-height: 2;
+}
+input,
+textarea {
+  /* border: 1px solid #ccc; */
+  outline: none;
+}
+.text-group {
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "subject phone"
+    "message message";
+  grid-gap: 1.5rem;
+  width: 80%;
+  margin: 1.5rem auto;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #e79b25;
+}
+.text-input {
+  padding: 0.5rem;
+}
+.name-input {
+  grid-area: name;
+}
+.email-input {
+  grid-area: email;
+}
+.phone-input {
+  grid-area: phone;
+}
+.subject-input {
+  grid-area: subject;
+}
+.message-input {
+  grid-area: message;
+  height: 100px;
+}
+.btn-submit {
+  background: #333;
+  transition: all 0.5s ease;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  display: block;
+  width: 40%;
+  margin: auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.btn-submit:hover {
+  background: #e79b25;
+}
+.contact-b {
+  text-align: center;
+  min-height: auto;
+  margin-top: 3rem;
+}
+.contact-details {
+  background: #333;
+  padding: 4rem;
+}
+.contact-details .content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #333;
+  color: #fff;
+}
+.contact-details .content-wrapper .contact-item {
+  text-align: center;
+  line-height: 2;
+}
+.contact-details .content-wrapper .contact-item i {
+  font-size: 3rem;
+}
+.contact-details .content-wrapper .contact-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.contact-c {
+  text-align: center;
+  min-height: auto;
+
+  background: #e79b25;
+  padding: 8rem;
+}
+.contact-c h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
+    text-align: center;
+  }
+  .nav-links li {
+    opacity: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+    width: 80%;
+    padding-bottom: 5rem;
+    margin: 2rem auto;
+  }
+  .nav-links li a {
+    font-size: 1.5rem;
+  }
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: block;
+    z-index: 15;
+  }
+  .text-group {
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "phone"
+      "message";
+  }
+  .btn-submit {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .contact-details .content-wrapper {
+    grid-template-columns: 1fr;
+    line-height: 2;
+  }
+  .contact-details .content-wrapper .contact-item {
+    margin: 2rem auto;
+    border-bottom: 1px solid #ccc;
+    width: 98%;
+    padding-bottom: 1.5rem;
+  }
+  .contact-details .content-wrapper .contact-item:last-child {
+    border: none;
+    padding: 0.5rem;
+  }
+  .contact-c h1 {
+    font-size: 2rem;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}

@@ -15,12 +15,12 @@ header {
   grid-gap: 1.5rem;
 }
 .work-grid img {
-  width: 450px;
+  width: 25rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
 }
 .cat {
-  height: 250px;
+  height: 13rem;
 }
 .card {
   margin-top: 2rem;
@@ -131,6 +131,9 @@ header {
   .work-grid {
     grid-template-columns: 1fr;
   }
+  .card img {
+    margin: auto;
+  }
   .btn-insta {
     display: block;
     width: 70%;
@@ -151,6 +154,76 @@ header {
     margin: auto;
     margin-bottom: 1.25rem;
     padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
+    text-align: center;
+  }
+  .nav-links li {
+    opacity: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+    width: 80%;
+    padding-bottom: 5rem;
+    margin: 2rem auto;
+  }
+  .nav-links li a {
+    font-size: 1.5rem;
+  }
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: block;
+    z-index: 15;
+  }
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+  .card img {
+    width: 150px;
+    margin: auto;
+  }
+  .btn-insta {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 1rem;
+  }
+  .btn-website {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 1rem;
+  }
+  .btn-source {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 1rem;
   }
 }
 
