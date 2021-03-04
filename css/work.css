@@ -92,6 +92,44 @@ header {
     #f09433 100%
   );
 }
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 80%;
+    margin: 1.25rem auto;
+  }
+  .card p {
+    font-size: 1.25rem;
+    width: 98%;
+  }
+  .card img {
+    width: 200px;
+    margin: auto;
+  }
+  .btn-website {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.55rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+  }
+  .btn-source {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 800px) {
   body {
     overflow-x: hidden;
@@ -131,29 +169,41 @@ header {
   .work-grid {
     grid-template-columns: 1fr;
   }
+  .card {
+    width: 70%;
+    margin: 1.25rem auto;
+  }
+  .card p {
+    font-size: 1rem;
+    width: 98%;
+  }
   .card img {
+    width: 200px;
     margin: auto;
   }
   .btn-insta {
     display: block;
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-bottom: 1.25rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
   .btn-website {
     display: block;
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-bottom: 1.25rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
   }
   .btn-source {
     display: block;
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-bottom: 1.25rem;
     padding: 0.5rem 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -210,6 +260,7 @@ header {
     margin: auto;
     margin-bottom: 1.25rem;
     padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
   .btn-website {
     display: block;
