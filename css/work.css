@@ -19,14 +19,9 @@ header {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
 }
-.codie
+.insta
 {
   height: 266.66px;
-  width: 400px;
-}
-.coke {
-  height: 266.66px;
-  width: 400px;
 }
 .card {
   margin-top: 2rem;
@@ -57,18 +52,18 @@ header {
 }
 .vaccine
 {
-  width: 400px;
-  height: 266.66px;
+width: 25rem;
 }
 .btn-adobe
 {
   background: #b429b4;
-  color: white;
+  color:  white;
   transition: all 0.5s ease;
   padding: 1rem 2rem; 
   font-size: 1.25rem;
   border-radius: 0.8rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-right:1.25rem;
 }
 .btn-adobe:hover
 {
@@ -90,6 +85,8 @@ header {
   border-radius: 0.8rem;
   color: #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-right:1.25rem;
+
 }
 .btn-figma:hover
 {

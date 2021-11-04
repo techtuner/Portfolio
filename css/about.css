@@ -37,7 +37,20 @@ header {
   margin: 2rem auto 0.5rem auto;
   font-size: 1.5rem;
 }
-
+.resume
+{
+  background: #e79b25;
+  padding:1.25rem 3rem;
+  color: #fff;
+  margin: 1.5rem auto;
+  border-radius: 0.75rem;
+font-size: 1.25rem;
+}
+.resume:hover
+{
+  background: #eed1a6;
+  color: #333;
+}
 .about-a .a-content .right-content p {
   font-size: 1.25rem;
   width: 70%;
