@@ -19,8 +19,14 @@ header {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
 }
-.cat {
-  height: 13rem;
+.codie
+{
+  height: 266.66px;
+  width: 400px;
+}
+.coke {
+  height: 266.66px;
+  width: 400px;
 }
 .card {
   margin-top: 2rem;
@@ -48,6 +54,53 @@ header {
 .btn-website:hover {
   background: #eed1a6;
   color: #333;
+}
+.vaccine
+{
+  width: 400px;
+  height: 266.66px;
+}
+.btn-adobe
+{
+  background: #b429b4;
+  color: white;
+  transition: all 0.5s ease;
+  padding: 1rem 2rem; 
+  font-size: 1.25rem;
+  border-radius: 0.8rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.btn-adobe:hover
+{
+  background: #5e1b5e;
+}
+.btn-figma
+{
+  background: linear-gradient(
+    45deg,
+    #f24e1e 0%,
+    #ff7262 25%,
+    #a259ff 50%,
+    #1abcfe 75%,
+    #0acf83 100%
+  );
+  transition: all 5s ease;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.btn-figma:hover
+{
+  background: linear-gradient(
+    45deg,
+    #0acf83 0%,
+    #1abcfe 25%,
+    #a259ff 50%,
+    #ff7262 75%,
+    #f24e1e 100%
+  );
 }
 .btn-source {
   background: #333;
@@ -121,7 +174,7 @@ header {
     padding: 0.5rem 1.25rem;
     font-size: 1rem;
   }
-  .btn-source {
+  .btn-source,.btn-adobe,.btn-insta,.btn-figma   {
     display: block;
     width: 90%;
     margin: auto;
